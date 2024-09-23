@@ -1,5 +1,5 @@
 #Timeline
-	- [ ] homePage
+	- [] homePage
 	- [ ] SubHomePages
 	- [ ] information directory
 	- [ ] information pages
