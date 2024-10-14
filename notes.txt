@@ -1,0 +1,6 @@
+colors:
+    606c38  (green)
+    283618  (dark green)
+    FEFAE0  (cream)
+    DDA15E  (orange)
+    BC6C25  (brown)

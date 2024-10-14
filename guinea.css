@@ -1,0 +1,22 @@
+h1 {
+    color : BC6C25;
+    font-size : 2em;
+    text-align : center;
+}
+body{
+    background-color : #FEFAE0;
+    font-family : Arial, sans-serif;
+}
+img {
+    display : block;
+    margin-left : auto;
+    margin-right : auto;
+}
+#toc {
+    background-color : #F7E7CE;
+    border : 1px solid #BC6C25;
+    float : right;
+    margin : 10px;
+    padding : 10px;
+    width : 200px;
+}
