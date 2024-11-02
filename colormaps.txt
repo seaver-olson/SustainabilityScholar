@@ -1,0 +1,12 @@
+ocean:
+    F9DBBA (Sandy)
+    5B99C2 (lightest blue)
+    1A4870 (navy)
+    1F316F (darkest blue)
+
+forest:
+    A28B55 (light brown)
+    86AB89 (muted lime green)
+    CBE2B5 (lighter green)
+    E7FBE6 (lightest green)
+
