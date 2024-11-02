@@ -17,15 +17,20 @@
         - **Types of Solar Energy Technologies**
           - **Photovoltaics (PV)**: Used in solar panels; captures energy directly from sunlight and stores it in PV cells.
           - **Concentrating Solar-Thermal Power (CSP)**: Used in large power plants; reflects sunlight with mirrors to create heat, which is then stored for energy.
-
     - **Energy Conservation Tips**
       - Practical advice for reducing everyday energy usage
+        - New Hampshire Office of Strategic Initiatives. “Tips for Managing Your Electric Use.” New Hampshire Energy https://www.energy.nh.gov/consumers/energy-efficiency/energy-efficiency-programs-and-services/tips-managing-your-electric.
+        - **Turn Down Your Thermostat**
+            - save as much as 3% energy consumtion per degree that you turn you thermostat down to during the winter season
+            - more later
       - Encourages mindful habits and practices
+            - add later
       - Examples of energy-saving techniques and tools
-
+            - add later
     - **Examples and Links to Resources**
       - Projects and previous research on energy conservation
-
+        - https://www.energy.gov/energysaver/do-it-yourself-energy-savers-projects DIY projects to make energy bill go down
+        - **Government-led Clean Energy Programs** https://www.epa.gov/energy/clean-energy-programs 
   - **Water**
     - **Built-in Water Footprint Calculator** (Coming Soon)
       - Helps users understand their impact on the water crisis
@@ -48,6 +53,6 @@
     - **Climate Change Impact**
       - Scary climate change statistics
       - Steps to reduce carbon footprint
-
+        
 - **Contact Us**
   - Email for suggestions and questions
