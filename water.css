@@ -1,0 +1,23 @@
+body {
+    display: flex;
+    flex-direction: column; /* Stacks items vertically */
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #EAD8B1;
+}
+
+.infobox{
+    background-color: #6A9AB0;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+.infobox p{
+    color: #54473F;
+}
+.infobox h1{
+    color: #54473F;
+}
