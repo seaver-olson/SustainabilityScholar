@@ -1,0 +1,32 @@
+body {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #821131;
+}
+
+.section-divider {
+    background-color: #FABC3F;
+    height: 5px;
+    width: 100%;
+    margin: 20px 0;
+}
+
+.infobox{
+    background-color: #FABC3F;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.infobox p{
+    color: #54473F;
+}
+
+.infobox h1{
+    color: #54473F;
+}
