@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Particles Animation</title>
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            background-color: #224154;
+            text-align: center;
+            overflow: hidden;
+        }
+
+        body:after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/751678/my-illustration-foreground.png');
+            background-repeat: no-repeat;
+            background-position: bottom center;
+            background-size: 100% auto;
+            z-index: 9;
+        }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/p5.min.js"></script>
+    <script>
+        let width, height, nParticles, particles, bck;
+
+        function preload() {
+            bck = loadImage('https://s3-us-west-2.amazonaws.com/s.cdpn.io/751678/my-illustration-background.png');
+        }
+
+        function setup() {
+            width = windowWidth;
+            height = windowHeight;
+            nParticles = 500; // Number of stars
+            particles = [];
+            createCanvas(width, height);
+        }
+
+        function draw() {
+            image(bck, 0, 0, width, height);
+
+            while (particles.length < nParticles) {
+                let star = new Particle();
+                particles.push(star);
+            }
+
+            for (let i = particles.length - 1; i >= 0; i--) {
+                particles[i].update();
+                if (particles[i].x > width || particles[i].y > height || particles[i].x < 0 || particles[i].y < 0) {
+                    particles.splice(i, 1);
+                }
+            }
+        }
+
+        class Particle {
+            constructor() {
+                this.radius = random(1, 10);
+                this.alpha = random(100, 150);
+                this.x = random(width, 0);
+                this.y = height;
+                this.ySpeed = random(0, -3);
+                this.xSpeed = random(0.3, -0.3);
+            }
+
+            update() {
+                noStroke();
+                fill(102, 183, 255, this.alpha);
+                ellipse(this.x, this.y, this.radius, this.radius);
+                this.alpha -= random(0.2, 1);
+                this.x += this.xSpeed;
+                this.y += this.ySpeed;
+            }
+        }
+
+        function windowResized() {
+            width = windowWidth;
+            height = windowHeight;
+            resizeCanvas(width, height);
+        }
+    </script>
+</head>
+<body>
+</body>
+</html>

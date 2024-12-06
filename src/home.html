@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,25 +8,58 @@
     <link rel="stylesheet" href="home.css">
 </head>
 <body>
+    <div class="rain"></div>
+    <script>
+        const droplets = 250;
+    const rainContainer = document.querySelector('.rain');
+
+    for (let r = 0; r < droplets; r++) {
+      // Create SVG element
+      const svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+      svg.setAttribute("class", "rain__drop");
+      svg.setAttribute("preserveAspectRatio", "xMinYMin");
+      svg.setAttribute("viewBox", "0 0 5 50");
+      
+      // Randomize styles
+      const randomStyles = {
+        "--x": `${Math.floor(Math.random() * 100)}vw`,
+        "--y": `${Math.floor(Math.random() * -100)}vh`,
+        "--o": Math.random(),
+        "--a": Math.random() + 0.5,
+        "--d": (Math.random() * 2) - 1,
+        "--s": Math.random()
+      };
+      Object.entries(randomStyles).forEach(([key, value]) => svg.style.setProperty(key, value));
+
+      // Create path element
+      const path = document.createElementNS("http://www.w3.org/2000/svg", "path");
+      path.setAttribute("stroke", "none");
+      path.setAttribute("d", "M 2.5,0 C 2.6949458,3.5392017 3.344765,20.524571 4.4494577,30.9559 5.7551357,42.666753 4.5915685,50 2.5,50 0.40843152,50 -0.75513565,42.666753 0.55054234,30.9559 1.655235,20.524571 2.3050542,3.5392017 2.5,0 Z");
+      
+      // Append path to SVG
+      svg.appendChild(path);
+
+      // Append SVG to container
+      rainContainer.appendChild(svg);
+    }
+    </script>
     <h1>Sustainability Scholar</h1>
-    
     <div class="button">
         <a href="water.html" class="button-link">Water</a>
     </div>
 
     <div class="button-container">
         <div class="button"  >
-            
             <a href="energy.html" class="button-link">Energy & Fuel</a>
         </div>
-        
-        <div class="button">
-            <a href="environment.html" class="button-link">Environment</a>
-        </div>
+
+    <div class="button">
+        <a href="environment.html" class="button-link">Environment</a>
+    </div>
     </div>
     <!-- contact us differnt background color to seperate it but on the same page-->
     <div class="contact">
-        <h3>Please Contact us @ Sjolson007 At Gmail dot Com</h3>
+        <h3>Please Contact us @ Sjolson007 [ At ] Gmail [ dot ] Com</h3>
     </div>
 </body>
 </html>
