@@ -1,5 +1,7 @@
 # Homepage
 
+I DO NOT OWN ANY INFORMATION ON THIS WEBSITE
+
 - **Introductory Banner**
   - Introduces the three categories
   - Emphasizes the importance of being sustainable
